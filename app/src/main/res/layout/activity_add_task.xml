@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new task"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:height="100dp"
+        android:background="#f1e5d7"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task"
+        android:padding="16dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_below="@id/editTextTask"
+        android:layout_centerHorizontal="true"
+        android:background="#f1d8d7"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Date: "
+        android:textSize="20sp"
+        android:layout_below="@id/buttonSelectDate"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:layout_below="@id/textViewSelectedDate"
+        android:layout_centerHorizontal="true"
+        android:background="#f1d8d7"
+        android:layout_marginTop="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewSelectedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Time: "
+        android:textSize="20sp"
+        android:layout_below="@id/buttonSelectTime"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:layout_below="@id/textViewSelectedTime"
+        android:layout_centerHorizontal="true"
+        android:background="#f1d8d7"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:layout_below="@id/buttonAddTask"
+        android:layout_centerHorizontal="true"
+        android:background="#f1d8d7"
+        android:layout_marginTop="50dp"/>
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#000">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tasks"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="About"
+            android:textColor="#fff"
+            android:background="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>

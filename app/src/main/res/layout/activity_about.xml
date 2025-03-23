@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:height="100dp"
+        android:background="#f1e5d7"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:text="Project created by"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/d2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d1"
+        android:text="@string/authors"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/d3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d2"
+        android:text="What can I do in the app?"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/d4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d3"
+        android:text="You can add your tasks in order to receive notifications and reminders of them as soon as their deadline comes. \n You can activate also the weather notifications in real time (in Settings you have a button Start Weather Service, if you want to stop it, just click on Stop Weather Service."
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/d5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d4"
+        android:text="How many notifications I will receive?"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/d6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d5"
+        android:text="You will receive 4 notifications. \n - one when task is created \n - one when you have 24 hours left until the deadline \n - one when you have 1 hour left \n one when the deadline is finished"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/d7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d6"
+        android:text="How can I delete a task?"
+        android:paddingLeft="10px"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/d8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d7"
+        android:text="You can delete one task in TASKS tab by pressing long on it until the pop-up for deleting the task will be on screen."
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#000">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tasks"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Settings"
+            android:textColor="#fff"
+            android:background="#000"/>
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="About"
+            android:textColor="#fff"
+            android:background="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>
